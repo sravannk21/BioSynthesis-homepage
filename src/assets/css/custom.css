@@ -15,7 +15,12 @@ p {
     line-height: 1.6;
 }
 
-/* LAYOUT COLORS */
+
+
+
+
+
+/* LAYOUT COLORS(overriding exisitng colors */
 :root {
   --bs-primary: #2A9D8F;
   --bs-secondary: #A8D76F;
@@ -25,4 +30,9 @@ p {
 }
 .text-secondary,.background-secondary {
     color: var(--bs-secondary) !important;
+}
+
+/* NAVBAR STYLES */
+.navbar {
+    background-color: #262A2D;
 }
