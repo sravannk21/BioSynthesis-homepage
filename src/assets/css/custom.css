@@ -1,3 +1,4 @@
+/* BASIC STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -12,4 +13,16 @@ h1,h2,h3,h4,h5,h6 {
 p {
     font-family: "Open Sans", sans-serif;
     line-height: 1.6;
+}
+
+/* LAYOUT COLORS */
+:root {
+  --bs-primary: #2A9D8F;
+  --bs-secondary: #A8D76F;
+}
+.text-primary,.background-primary {
+    color: var(--bs-primary) !important;
+}
+.text-secondary,.background-secondary {
+    color: var(--bs-secondary) !important;
 }
