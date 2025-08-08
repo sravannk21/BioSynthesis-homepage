@@ -36,7 +36,11 @@ p {
 
 
 
+/* CUTOM UTILITIY CLASSES */
 
+.u_paddingLarge{
+    padding:5rem 0;
+}
 
 
 /* LAYOUT COLORS(overriding exisitng colors */
@@ -55,4 +59,14 @@ p {
 /* NAVBAR STYLES */
 .navbar {
     background-color: #262A2D;
+}
+
+
+
+/* INTRODUCTION AREA */
+.introductionArea{
+    
+}
+.introductionArea >img{
+    height: 500px;
 }
