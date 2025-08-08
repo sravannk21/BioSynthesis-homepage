@@ -1,4 +1,4 @@
-/* BASIC STYLES */
+/* BASIC */
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +7,31 @@
 body {
     height: 100%;
 }
+
+/* HEADINGS */
 h1,h2,h3,h4,h5,h6 {
     font-family: "Montserrat", sans-serif;
+}
+h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+.headlingLabel{
+    background-color: #eeeeee;
+}
+.headlingLabel::before{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: " ";
+    background-color: var(--bs-primary);
+    margin-right: .6rem;
 }
 p {
     font-family: "Open Sans", sans-serif;
     line-height: 1.6;
+    color: var(--bs-font);
 }
 
 
@@ -24,6 +43,7 @@ p {
 :root {
   --bs-primary: #2A9D8F;
   --bs-secondary: #A8D76F;
+  --bs-font: #636363;
 }
 .text-primary,.background-primary {
     color: var(--bs-primary) !important;
