@@ -21,7 +21,7 @@ body {
 
 
 
-/* HEADINGS */
+/* TYPOGRAPHY */
 h1,h2,h3,h4,h5,h6 {
     font-family: "Montserrat", sans-serif;
 }
@@ -29,17 +29,8 @@ h1 {
     font-size: 4.5rem;
     font-weight: 700;
 }
-.headlingLabel{
-    background-color: #eeeeee;
-}
-.headlingLabel::before{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    content: " ";
-    background-color: var(--bs-primary);
-    margin-right: .6rem;
+h3{
+    font-size: 2.625rem;
 }
 p {
     font-family: "Open Sans", sans-serif;
@@ -65,6 +56,22 @@ p {
     padding: 0 .8rem;
 }
 
+.btn_transparent,
+.btn_transparent:active,
+.btn_transparent:visited{
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid #3F7D58 !important;
+}
+
+.btn_transparent:hover{
+    color:#262A2D !important;
+    border-bottom: 1px solid #262A2D !important;
+    transition: all .7s;
+}
+
+
 
 
 
@@ -75,6 +82,14 @@ p {
 /* CUSTOM UTILITIY CLASSES */
 
 .u_paddingLarge{padding:5rem 0;}
+
+
+
+
+
+
+
+
 
 
 /* LAYOUT COLORS(overriding exisitng colors */
@@ -90,11 +105,22 @@ p {
     color: var(--bs-secondary) !important;
 }
 
-/* NAVBAR STYLES */
+/* NAVBAR AND HERO SECTION STYLES */
 .navbar {
     background-color: #262A2D;
 }
-
+.headlingLabel{
+    background-color: #eeeeee;
+}
+.headlingLabel::before{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: " ";
+    background-color: var(--bs-primary);
+    margin-right: .6rem;
+}
 
 
 /* INTRODUCTION AREA */
@@ -104,6 +130,13 @@ p {
 .introductionArea >img{
     height: auto;
 }
+
+
+
+
+
+
+
 
 /* CTA BANNER STYLES */
 .ctaBanner{
@@ -115,6 +148,13 @@ p {
 }
 .ctaBanner .ctaBtn{
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     right: 6rem;
+}
+
+
+
+/* CARD STYLES */
+.rightSlide, .leftSlide{
+    height: 28rem;
 }
