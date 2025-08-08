@@ -8,6 +8,19 @@ body {
     height: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* HEADINGS */
 h1,h2,h3,h4,h5,h6 {
     font-family: "Montserrat", sans-serif;
@@ -36,11 +49,32 @@ p {
 
 
 
-/* CUTOM UTILITIY CLASSES */
 
-.u_paddingLarge{
-    padding:5rem 0;
+
+
+
+
+
+
+
+/* REUSEABLE COMPONENTS */
+.ctaBtn{
+    display: inline-block;
+    background-color: #3F7D58;
+    border-radius: 50%;
+    padding: 0 .8rem;
 }
+
+
+
+
+
+
+
+
+/* CUSTOM UTILITIY CLASSES */
+
+.u_paddingLarge{padding:5rem 0;}
 
 
 /* LAYOUT COLORS(overriding exisitng colors */
@@ -68,5 +102,19 @@ p {
     
 }
 .introductionArea >img{
-    height: 500px;
+    height: auto;
+}
+
+/* CTA BANNER STYLES */
+.ctaBanner{
+    background: url('/assets/img/morining_landscape.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+}
+.ctaBanner .ctaBtn{
+    position: absolute;
+    bottom: 1rem;
+    right: 6rem;
 }
