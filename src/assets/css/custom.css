@@ -140,9 +140,22 @@ p {
 }
 
 
-
-
-
+/* CAROUSEL STYLES */
+.swiper {
+  width: 100%;
+  height: auto;
+}
+.swiper-button-prevCustom,
+.swiper-button-nextCustom{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .2rem .4rem;
+    border-radius: 50%;
+    border: 1.5px solid #000;
+}
+.swiper-button-prevCustom{
+    margin-right: 1rem;
+}
 
 
 
@@ -257,3 +270,4 @@ footer{
 .footer_links li:last-child{
     padding-bottom: 0;
 }
+

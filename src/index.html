@@ -16,11 +16,15 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
-        <!-----------ICONS--------------->
+    <!-----------ICONS--------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-----------SWIPPER-js--------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
@@ -80,7 +84,7 @@
                 <!-----------PAGE-BANNER------->
                 <div class="banner text-center ">
                     <div class="container">
-                        <span>
+                        <span class="d-none d-lg-block">
                             <p class="w-25 mx-auto rounded-5 text-black headlingLabel">Top Agro Researcher’s</p>
                         </span>
                         <h1>Cultivating Next-Gen Growth <br> in Agriculture</h1>
@@ -95,11 +99,11 @@
         </section>
 
         <!-----------INTRODUCTION-AREA------->
-        <section class="introductionArea">
+        <section class="introductionArea u_paddingLarge">
             <!------------IMAGE-BLOCK----------------->
             <img src="/assets/img/banner.png" alt="banner" class="img-responsive w-100">
             <div class="container">
-                <div class="row u_paddingLarge">
+                <div class="row u_paddingTop">
                     <div class="col-6">2025</div>
                     <div class="col-6">
                         <p>
@@ -109,6 +113,78 @@
                             tomorrow.
                         </p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-----------HIGHLIGHTS-CAROUSEL------->
+        <section class="carouselSection u_paddingLarge">
+            <div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper py-3">
+                        <!--------------SLIDE------------------->
+                        <div class="swiper-slide">
+                            <div class="imgContainer">
+                                <img src="./assets/img/serene-rural vineyard.jpg" class="img-fluid rounded-3 h-auto" alt="">
+                            </div>
+                            <p class="text-end py-3">Organic Farm</p>
+                            <div class="text-end">
+                                <span class="swiper-button-prevCustom position-static d-inline text-black"><i class="bi bi-chevron-left"></i></span>
+                                <span class="swiper-button-nextCustom position-static d-inline bg-black text-white"><i class="bi bi-chevron-right"></i></span>
+                            </div>
+                        </div>
+
+                        <!--------------SLIDE------------------->
+                        <div class="swiper-slide">
+                            <div class="contentArea py-4">
+                                <h4 class="d-inline">Get <br> Started Now</h4>
+                                <span class="ctaBtn text-end"><a href="#" class="text-decoration-none text-white fs-2">&nearr;</a></span>
+                            </div>
+                            <div class="imgContainer">
+                                <img src="./assets/img/image2.jpg" class="img-fluid rounded-3 h-auto" alt="">
+                            </div>
+                            <p class="text-end py-3">Organic Fertilizer</p>
+                        </div>
+
+                        <!--------------SLIDE------------------->
+                        <div class="swiper-slide">
+                            <div class="imgContainer">
+                                <img src="./assets/img/image3.jpg" class="img-fluid rounded-3 h-auto" alt="">
+                            </div>
+                            <p class="text-end py-3">Technology Irrigation</p>
+                        </div>
+                        
+                        <!--------------SLIDE------------------->
+                        <div class="swiper-slide">
+                            <div class="imgContainer pt-5">
+                                <img src="./assets/img/image 4.jpg" class="img-fluid rounded-3 h-auto" alt="">
+                            </div>
+                            <p class="text-end py-3">Agricultural Monitoring</p>
+                        </div>
+
+                        <!--------------SLIDE------------------->
+                        <div class="swiper-slide">
+                            <div class="imgContainer">
+                                <img src="./assets/img/serene-rural vineyard.jpg" class="img-fluid rounded-3 h-auto" alt="">
+                            </div>
+                            <p class="text-end py-3">Organic Farm</p>
+                            <div class="text-end">
+                                <span class="swiper-button-prevCustom position-static d-inline text-black"><i class="bi bi-chevron-left"></i></span>
+                                <span class="swiper-button-nextCustom position-static d-inline bg-black text-white"><i class="bi bi-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </section>
@@ -193,26 +269,30 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="firstName" class="text-capitalize">first name</label>
-                                        <input type="text" class="rounded-4 py-1 px-2 form_field w-100" name="firstName" id="">
+                                        <input type="text" class="rounded-4 py-1 px-2 form_field w-100" name="firstName"
+                                            id="">
                                     </div>
 
                                     <div class="col-6">
                                         <label for="lastName" class="text-capitalize ">last name</label>
-                                        <input type="text" class="rounded-4 py-1 px-2 form_field w-100" name="lastName" id="">
+                                        <input type="text" class="rounded-4 py-1 px-2 form_field w-100" name="lastName"
+                                            id="">
                                     </div>
 
                                     <div>
                                         <label for="email" class="text-capitalize">email</label><br>
-                                        <input type="email" class="rounded-4 py-1 px-2 form_field w-100" name="email" id="">
+                                        <input type="email" class="rounded-4 py-1 px-2 form_field w-100" name="email"
+                                            id="">
                                     </div>
 
                                     <div>
                                         <label for="message" class="text-capitalize">message</label>
                                         <textarea name="message" id="" class="w-100 rounded-4"></textarea>
                                     </div>
-                                    
+
                                     <div>
-                                        <input type="submit" value="send" class="btn btn-dark text-capitalize rounded-4 mt-4 w-100">
+                                        <input type="submit" value="send"
+                                            class="btn btn-dark text-capitalize rounded-4 mt-4 w-100">
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +314,8 @@
                     <div class="col-5">
                         <img src="./assets/img/footerLogo.png" alt="logo" class="img-fluid">
                         <p class="py-3 w-75">
-                            Monitor crop health in real-time with smart tools that detect issues early and protect your yield.
+                            Monitor crop health in real-time with smart tools that detect issues early and protect your
+                            yield.
                         </p>
                         <!----------SOCIAL MEDIA ICONS------------->
                         <ul class="social_icons">
@@ -289,5 +370,31 @@
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+//   autoplay: {
+//         delay: 2500,
+//         disableOnInteraction: false,
+//     },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-nextCustom',
+    prevEl: '.swiper-button-prevCustom',
+  },
+
+  // scroll bar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: true,
+  },
+});
+</script>
 
 </html>
