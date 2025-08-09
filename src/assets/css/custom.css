@@ -180,6 +180,15 @@ p {
     height: 75vh;
     position: relative;
 }
+
+/* CTA BANNER FOR SMALL SCREENS */
+.ctaBanner_Small_screen{
+    background: url('/assets/img/morining_landscape.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 12.5rem;
+    position: relative;
+}
 .ctaBanner .ctaBtn{
     position: absolute;
     bottom: 2rem;
