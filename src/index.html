@@ -31,25 +31,17 @@
 <body>
     <main>
         <!-----------HERO-SECTION------->
-        <section class="hero-section d-flex min-vh-100 overflow-hidden">
+        <section class="hero-section d-flex d-md-block min-vh-md-100 overflow-hidden">
             <div class="row">
                 <!-----------PAGE-NAVIGATION------->
-                <nav class="main-menu">
+                <nav class="main-menu d-none d-lg-block">
                     <div class="container mx-auto">
                         <div class="row py-5">
-                            <div class="col-4 text-start"><img src="/assets/img/logo.png" alt="BioSynthesis-logo"></div>
+                            <div class="col text-start"><img src="/assets/img/logo.png" alt="BioSynthesis-logo"></div>
 
-
-                            <div class="col-4">
+                            <div class="col-5">
                                 <section class="navbar navbar-expand-lg rounded-5 p-1">
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-
-
-                                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div>
                                         <ul class="navbar-nav align-items-start">
                                             <li>
                                                 <a class="nav-item nav-link active bg-white text-black text-capitalize rounded-5"
@@ -72,15 +64,16 @@
                                 </section>
                             </div>
 
-
-
-                            <div class="col-4 text-end">
+                            <div class="col text-end">
                                 <li class="btn text-capitalize">login</li>
                                 <li class="btn btn-outline-dark text-capitalize rounded-5">signup free</li>
                             </div>
                         </div>
                     </div>
                 </nav>
+
+                <!-----------MOBILE NAVIGATION------->
+                
                 <!-----------PAGE-BANNER------->
                 <div class="banner text-center ">
                     <div class="container overflow-hidden">
