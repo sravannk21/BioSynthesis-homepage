@@ -129,6 +129,9 @@ p {
     background-color: var(--bs-primary);
     margin-right: .6rem;
 }
+.startBtn{
+    padding: 1rem 2.5rem;
+}
 
 
 /* INTRODUCTION AREA */
